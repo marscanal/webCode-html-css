@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test.float2 </title>
+    <link rel="icon" href="./未标题-1.ico">
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .leftfix{
+            float: left;
+        }
+
+        .leftfix{
+            float: left;
+        }
+
+        .clearfix:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .container{
+            text-align: center;
+            width: 960px;
+        }
+        .banner{
+            width: 960px;
+            margin-bottom: 10px;
+        }
+        
+        .logo,
+        .banner1,
+        .banner2 {
+            height: 80px;
+            background-color: #ccc;
+        }
+
+        .banner div:nth-child(-n+2) {
+            /* color: aqua; */
+            margin-right: 10px;
+        }
+        
+        .logo{
+            width: 200px;
+        }
+
+        .banner1 {
+            width: 540px;
+        }
+
+        .banner2{
+            width: 200px;
+        }
+
+        .menu{
+            height: 30px;
+            width: 960px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+        }    
+
+        .left{
+            width: 760px;
+            height: 420px;
+            background-color: pink;
+        }
+
+        .right{
+            width: 200px;
+            height: 420px;
+            background-color: skyblue;
+        }
+
+        .栏目{
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        .item1,
+        .item2 {
+            width: 370px;
+            height: 200px;
+        }
+
+        .left div:nth-child(-n+2){
+            margin-right: 10px;
+        }
+
+        /* .left:last-child{
+            margin-right: 10px; 
+        } */
+
+        .item3{
+            width: 180px;
+            height: 200px;
+            margin: 10px 0;
+            margin-right: 10px;
+        }
+
+        .item7{
+            width: 200px;
+            height: 130px;
+        }
+
+        .right div:not(:first-child){
+            margin-top: 10px;
+        }
+
+        .foot{
+            height: 60px;
+            width: 960px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <!-- 头部 -->
+        <div class="banner clearfix">
+            <div class="logo leftfix">1</div>
+            <div class="banner1 leftfix">2</div>
+            <div class="banner2 leftfix">3</div>
+        </div>
+        <!-- 菜单 -->
+        <div class="menu leftfix ">4</div>
+        <!-- 内容 -->
+        <div class="total clearfix">
+            <div class="left leftfix">
+                <div class="栏目 item1 leftfix">栏目1</div>
+                <div class="栏目 item2 leftfix">栏目2</div>
+                <div class="栏目 item3 leftfix">栏目3</div>
+                <div class="栏目 item3 leftfix">栏目4</div>
+                <div class="栏目 item3 leftfix">栏目5</div>
+                <div class="栏目 item3 leftfix">栏目6</div>
+                </div>
+            <div class="right leftfix">
+                <div class="栏目 item7 ">栏目7</div>
+                <div class="栏目 item7 ">栏目8</div>
+                <div class="栏目 item7 ">栏目9</div>
+        </div>
+        <!-- 页脚 --> 
+    </div>
+    
+    <div class="foot ">
+        页脚
+    </div>
+</body>
+</html>

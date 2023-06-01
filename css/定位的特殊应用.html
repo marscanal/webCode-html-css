@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            /* <!-- 撑满 --> */
+    .outer1 {
+        height: 100px;
+        background-color: pink;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .inner1 {
+        height: 30px;
+        background-color: #eee;
+        position: absolute;
+        left: 0%;
+        right: 0;
+    }
+    /* <!-- 居中 --> */
+    .outer2 {
+        height: 100px;
+        width: 500px;
+        background-color: pink;
+        position: relative;
+    }
+    .inner2 {
+        height: 30px;
+        width: 200px;
+        background-color: #eee;
+        position: absolute;
+        /* 方法一,不推荐 */
+        /* left: 50%;
+        top: 50%;
+        margin-left: -100px;
+        margin-top: -15px; 是inner的高和宽的一半*/
+
+        /* 方法二 */
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        /* margin: 一定得写; */
+    }
+
+</style>
+</head>
+<body>
+    <!-- 撑满 -->
+    <div class="outer1">
+        <div class="inner1">
+            1
+        </div>
+    </div>
+    <!-- 居中 -->
+    <div class="outer2">
+        <div class="inner2">
+            2
+        </div>
+    </div>
+</body>
+</html>

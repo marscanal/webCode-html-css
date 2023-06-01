@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            height: 300px;
+            width: 300px;
+            background-color: #ccc;
+            overflow: auto;
+        }
+        #d2{
+            width: 1000px;
+            background-color: orange;
+        }
+        .outer{
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            overflow: hidden;
+            text-align: center;
+            line-height: 400px;
+            /* 子元素为行内块和行内元素时，想让其垂直居中，给父级加font-size: 0; */
+            /* 行内元素可以当成文字调整 */
+        }
+        img{
+            /* display: block; */
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            /* 子元素为行内块和行内元素时，想让其垂直居中，子级加上vertical-align: middle; */
+        }
+        
+        .inner{
+            /* display: block; */
+            /* width: 200px; */
+            /* height: 100px; */
+            vertical-align: middle;
+            background-color: rgb(157, 197, 160);
+            /* margin: 0 auto; */
+            /* margin: 100px; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>lorem70</div> -->
+    <div id="d1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, aliquam atque laboriosam exercitationem qui culpa sunt consectetur a vero dolorem accusantium modi, voluptates dicta esse temporibus
+        <div id="d2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam labore cum aperiam atque, aut repellat iure minus laudantium ut enim! Laudantium tenetur, distinctio labore veniam consequatur id rem delectus dignissimos?
+        </div>
+        quaerat libero nesciunt dolore quas animi ea asperiores sed reiciendis? Veritatis ipsum odio, aut harum non ullam. Harum rem soluta perferendis impedit atque nisi iste ipsa facere animi in? Eaque cumque aliquid nemo minus. Nemo, sed in numquam porro eius ullam veniam necessitatibus ipsa.
+    </div>
+    <!-- 布局的技巧 -->
+    <div class="outer">
+        <span class="inner">
+            inner
+        </span>
+        <img src="../html/tea1.jpg" alt="" >
+    </div>
+
+</body>
+</html>
