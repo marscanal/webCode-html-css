@@ -1,0 +1,37 @@
+/* 基础设置 */
+*{
+    /* font-size: 0; */
+text-decoration: none;
+color: black;
+margin: 0;
+padding: 0 ;
+}
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+.leftfix {
+    float: left;
+}
+.rightfix {
+    float: right;
+}
+
+/* 顶部导航条start */
+.topbar {
+    height: 30px;
+    background-color: #ececec;
+}
+.welcome {
+    height: 30px;
+    line-height: 30px;
+    font-size: 0px;
+}
+.welcome span,.welcome a {
+    font-size: 12px;
+}
+.welcome .hello {
+    margin-right: 28px;
+}
+
+/* 顶部导航条end */
